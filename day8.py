@@ -42,7 +42,6 @@ for linija in nizPrviDio:
             temp[2] = rijec
     nizDesifrovanih.append({v: k for k, v in temp.items()})
 suma = 0
-print(nizDesifrovanih)
 for i, izlaz in enumerate(nizDrugiDio):
     suma += int(''.join(map(str, [nizDesifrovanih[i][rijec] for rijec in izlaz])))
 print(suma)

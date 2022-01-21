@@ -1,4 +1,4 @@
-f = otvorena_lista("input/9.txt", "r")
+f = open("input/9.txt", "r")
 
 nizLinija = f.readlines()
 matrica = []

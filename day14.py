@@ -5,8 +5,8 @@ nizTemplate, pravilaUmetanja = f.read().split('\n\n')
 template = nizTemplate.strip()
 izmedju = {}
 
-for rule in pravilaUmetanja.split('\n'):
-    par, slovo = rule.split(' -> ')
+for pravilo in pravilaUmetanja.split('\n'):
+    par, slovo = pravilo.split(' -> ')
     izmedju[par] = slovo
 
 def solver(koraci):
